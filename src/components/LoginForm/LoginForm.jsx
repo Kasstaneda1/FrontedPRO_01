@@ -2,8 +2,12 @@ import "./styles.css";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
 function LoginForm() {
+  const login = (event) => {
+    event.preventDefault();
+    console.log("Button login works!!!");
+  }
   return (
-    <form className="login_form">
+    <form onSubmit={login} className="login_form">
       <h2 className="login_form_title">Login form</h2>
       <div className="login_form_fields">
         <Input
@@ -21,6 +25,7 @@ function LoginForm() {
           placeholder="Enter your password"
         />
       </div>
+      {/* <Button onClick={login} name="Login" type="submit" /> */}
       <Button name="Login" type="submit" />
     </form>
   );

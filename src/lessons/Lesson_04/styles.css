@@ -1,0 +1,18 @@
+:root {
+  --toastify-toast-width: 160px;
+  --toastify-toast-min-height: 40px;
+  --toastify-toast-padding: 7px;
+  --toastify-toast-bd-radius: 4px;
+}
+
+.Toastify__toast {
+  font-size: 13px;
+}
+
+.lesson_04_wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
