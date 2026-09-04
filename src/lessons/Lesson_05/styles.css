@@ -1,0 +1,7 @@
+.lesson_05_wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}

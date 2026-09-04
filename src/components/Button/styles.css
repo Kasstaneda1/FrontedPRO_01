@@ -16,5 +16,9 @@
 }
 
 .button_component:hover {
-  background-color: rgb(71, 78, 247);
+  background-color: rgb(120, 112, 94);
+}
+
+.menu_buttons .button_component:active {
+  transform: scale(0.96);
 }
