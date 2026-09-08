@@ -1,6 +1,6 @@
 import "./styles.css";
-function Input(props) {
-  const { name, type, placeholder, label, id } = props;
+function Input({ name, type, placeholder, label, id }) {
+  // const { name, type, placeholder, label, id } = props;
   return (
     <div className="input_component">
       <label className="input_label">{label}</label>
