@@ -50,6 +50,17 @@
   gap: 15px;
 }
 .order_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   font-size: 26px;
   font-weight: bold;
+}
+
+.order_item .button_component {
+  width: 120px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
 }

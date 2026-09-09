@@ -24,15 +24,27 @@ function Lesson_05() {
       </div>
     );
   });
+
+   const onDeleteAll = () => {
+    setOrder([]);
+  };
+
+  const onRemove = (delRemove) => {
+    setOrder((prevValue) => {
+      return prevValue.filter((firstParametr, index) => index !== delRemove);
+    });
+  };
   //Представим, что у нас в order храниться массива ["Cola", "Fries", "Burger"]
   // нам нужно из массива ["Cola", "Fries", "Burger"] получить новый массив [<li>Cola</li>, <li>Fries</li>, <li>Burger</li>]
-  const orderList = order.map((orderEl) => {
+  const orderList = order.map((orderEl, index) => {
     return (
       <li key={v4()} className="order_item">
         {orderEl}
+        <Button name="Remove" onClick={() => onRemove(index)} />
       </li>
     );
   });
+
   console.log(orderList);
   return (
     <div className="lesson_05_wrapper">
@@ -96,6 +108,9 @@ function Lesson_05() {
       <div className="order_wrapper">
         <p className="order_title">Your Order:</p>
         <ol className="order_list">{orderList}</ol>
+        {order.length >= 1 && (
+          <Button name="Remove all" onClick={onDeleteAll} />
+        )}
       </div>
     </div>
   );

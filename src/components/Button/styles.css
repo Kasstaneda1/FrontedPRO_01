@@ -19,6 +19,10 @@
   background-color: rgb(120, 112, 94);
 }
 
-.menu_buttons .button_component:active {
+/* .menu_buttons .button_component:active {
+  transform: scale(0.96);
+} */
+
+.button_component:active {
   transform: scale(0.96);
 }
