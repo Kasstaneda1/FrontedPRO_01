@@ -7,7 +7,7 @@ import Lesson_051 from "./lessons/Lesson_05/Lesson_051";
 // HOMEWORKS
 import Homework_02 from "./homeworks/Homework_02/Homework_02";
 import Homework_03 from "./homeworks/Homework_03/Homework_03";
-import HomeWork_04 from "./homeworks/HomeWork_04/HomeWork_04"
+import HomeWork_04 from "./homeworks/HomeWork_04/HomeWork_04";
 function App() {
   return (
     <>
