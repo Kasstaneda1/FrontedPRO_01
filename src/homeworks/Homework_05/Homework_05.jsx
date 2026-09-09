@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 function Homework_05() {
-  const [cars, setCars] = useState([
+  const [cars] = useState([
     { brand: "BMW", price: 20000, isDiesel: true },
     { brand: "Mercedes", price: 22000, isDiesel: false },
     { brand: "Porsche", price: 50000, isDiesel: true },
